@@ -1,0 +1,13 @@
+.section {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px ;
+}
+
+.container {
+    border: 1px solid whitesmoke;
+    padding: 24px;
+}
