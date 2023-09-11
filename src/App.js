@@ -7,6 +7,8 @@ import Statistics from './components/Statistics';
 import Notification from './components/Notification';
 
 function App () {
+
+  const options = ["good","neutral","bad"];
   
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
@@ -50,7 +52,7 @@ function App () {
         <Container>
           <Section Title="Please leave feedback">
             <FeedbackOptions
-              options={["good","neutral","bad"]}
+              options={options}
               onLeaveFeedback={voiteHandler}
             />
           </Section>
