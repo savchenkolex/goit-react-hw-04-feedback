@@ -1,11 +1,11 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import css from './FeedbackOptions.module.css';
+import css from "./FeedbackOptions.module.css";
 
-export default function FeedbackOptions({options, onLeaveFeedback}) {
+export default function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
     <div className={css["btn-wrapper"]}>
-      {options.map(element => {
+      {options.map((element) => {
         return (
           <button
             key={element.toUpperCase()}
@@ -24,6 +24,6 @@ export default function FeedbackOptions({options, onLeaveFeedback}) {
 }
 
 FeedbackOptions.propTypes = {
-      options: PropTypes.array,
-      onLeaveFeedback: PropTypes.func,
+  options: PropTypes.array,
+  onLeaveFeedback: PropTypes.func,
 };

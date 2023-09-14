@@ -1,7 +1,3 @@
-export default function Notification ({message}) {
-    return (
-                <div>
-                    {message}
-                </div>
-           )
+export default function Notification({ message }) {
+  return <div>{message}</div>;
 }
